@@ -4,13 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".gameActivity">
+    android:orientation="vertical"
+    tools:context=".gameActivity"
+    android:padding="10dp"
+    android:layout_marginHorizontal="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:id="@+id/gameTop"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="score"
+            android:textSize="24dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="clock"
+            android:textSize="24dp"
+            />
+
+    </RelativeLayout>
 
     <TextView
-        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:text="hello,  testing..."/>
+        android:text="the riddle"
+        android:layout_marginTop="15dp"
+        android:textSize="28dp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+         >
+        <EditText
+            android:layout_width="0dip"
+            android:layout_weight=".8"
+            android:layout_height="match_parent"
+            android:hint="answer"
+            android:layout_margin="10dp"
+            />
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="clue"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="skip"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
 
 </LinearLayout>
