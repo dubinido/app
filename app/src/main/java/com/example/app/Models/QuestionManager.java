@@ -1,6 +1,5 @@
 package com.example.app.Models;
 
-import com.example.app.Exceptions.WrongAnswerException;
 
 import java.util.ArrayList;
 import java.util.Dictionary;
@@ -16,13 +15,12 @@ public class QuestionManager {
         this.answeredQuestions = new ArrayList<Long>();
     }
 
-    public Long submitAnswer(String userAnswer, Long questionId) throws WrongAnswerException {
-        Question selectedQuestion = this.questions.get(questionId);
-        if(!selectedQuestion.getAnswer().equals(userAnswer)){
-            throw new WrongAnswerException();
+    public boolean checkAnswer(String userAnswer, Long questionId) {
+        if(!this.questions.get(questionId).getAnswer().equals(userAnswer)){
+            return false;
         } else {
             this.answeredQuestions.add(questionId);
-            return selectedQuestion.getPoints();
+            return true;
         }
     }
 
