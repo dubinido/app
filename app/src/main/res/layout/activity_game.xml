@@ -21,7 +21,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="score"
+            android:text="תוצאה"
             android:textSize="24dp"
             />
 
@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:text="clock"
+            android:text="שעון"
             android:textSize="24dp"
             />
 
@@ -38,7 +38,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="the riddle"
+        android:text="חידה חידה חידה"
         android:layout_marginTop="15dp"
         android:textSize="28dp"
         android:gravity="center"
@@ -49,13 +49,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
          >
-        <EditText
-            android:layout_width="0dip"
-            android:layout_weight=".8"
-            android:layout_height="match_parent"
-            android:hint="answer"
-            android:layout_margin="10dp"
-            />
         <LinearLayout
             android:layout_width="0dip"
             android:layout_height="wrap_content"
@@ -64,14 +57,22 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="clue"
+                android:text="רמז"
                 />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="skip"
+                android:text="דלג"
                 />
         </LinearLayout>
+        <EditText
+            android:layout_width="0dip"
+            android:layout_weight=".8"
+            android:layout_height="match_parent"
+            android:hint="answer"
+            android:layout_margin="10dp"
+            />
+
 
     </LinearLayout>
 
